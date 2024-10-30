@@ -20,7 +20,20 @@ Preliminary findings suggest a positive impact of the Red Line on property value
 ## Limitations
 Data limitations, including address mapping challenges and pre-existing differences among properties, contribute to some residual confounding. Additionally, market-wide trends during the study period may influence our estimates.
 
+## Project Files
+
+- **Data Folder**:
+  - `raw_data.csv`: The raw real estate data gathered from public sources.
+  - `preprocessed_data.csv`: The data after preprocessing, with properties divided into distance groups.
+
+- **scraping.py**: Python script for web scraping to collect property data, mapping each property by "gush-helka" to its full address.
+
+- **google_api_distances.py**: Script for categorizing properties into distance bands from Red Line stations using Google API.
+
+- **Causal_Inference_Final.ipynb**: Jupyter Notebook containing the data analysis, including the causal inference experiments, statistical tests, and final results.
+
 ## Conclusion
 While proximity to the metro shows potential for enhancing property values, this effect is context-sensitive and varies across distance bands. Our study underscores the importance of comprehensive causal inference designs for urban infrastructure projects.
+
 
 ![image](https://github.com/user-attachments/assets/1dd49c8d-1676-47e5-bbac-a4a6ad1d3d26)
